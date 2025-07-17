@@ -135,7 +135,7 @@ var captionText = document.getElementById("caption");
 var i;
 for (i = 0; i < images.length; i++) {
   images[i].onclick = function(){
-    modal.style.display = "block";
+    modal.style.display = "flex";
     modalImg.src = this.src;
     modalImg.alt = this.alt;
     captionText.innerHTML = this.nextElementSibling.innerHTML;
