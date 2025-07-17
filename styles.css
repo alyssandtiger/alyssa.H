@@ -12,19 +12,6 @@ body {
   font-family: Arial;
 }
 
-.ribbon {
-  width: 60px;
-  font-size: 14px;
-  padding: 4px;
-  position: absolute;
-  right: -25px;
-  top: -12px;
-  text-align: center;
-  border-radius: 25px;
-  transform: rotate(20deg);
-  background-color: #ff9800;
-  color: white;
-}
 
 /* Center website */
 .main {
@@ -78,4 +65,14 @@ h1 {
   .column {
     width: 100%;
   }
+}
+
+.ribbon {
+  width: 60px;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 25px;
+  transform: rotate(20deg);
+  background-color: #ff9800;
+  color: white;
 }
