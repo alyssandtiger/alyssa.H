@@ -77,6 +77,11 @@
   text-decoration: none;
   cursor: pointer;
 }
+
+.comtainer{
+  display: inline-block;
+  padding: left 30px;
+}
 </style>
 
 </head>
@@ -86,11 +91,12 @@
 </div>
 
 <div class="row">
-  <div class="column side" style="background-color:#aaa;">Column</div>
-  <div class="column middle" style="background-color:#bbb;">Column</div>
-  <div class="column side" style="background-color:#ccc;">Column</div>
+  <div class="column side" style="background-color:#aaa;">ColumnA</div>
+  <div class="column middle" style="background-color:#bbb;">ColumnB</div>
+  <div class="column side" style="background-color:#ccc;">ColumnC</div>
 </div>
 
+<div class="container">"
 <div class="img">
     <img src="05ozi.png" alt="Ozi" width="300" height="300">
     <div class="desc"> Ozi </div">
@@ -98,15 +104,19 @@
 <div class="img">
     <img src="05ozi.png" alt="Ozi" width="300" height="300">
     <div class="desc"> Ozi </div">
-</div><div class="img">
+</div>
+<div class="img">
     <img src="05ozi.png" alt="Ozi" width="300" height="300">
     <div class="desc"> Ozi </div">
-</div><div class="img">
+</div>
+<div class="img">
     <img src="05ozi.png" alt="Ozi" width="300" height="300">
     <div class="desc"> Ozi </div">
-</div><div class="img">
+</div>
+<div class="img">
     <img src="05ozi.png" alt="Ozi" width="300" height="300">
     <div class="desc"> Ozi </div">
+</div>
 </div>
 <!-- The Modal -->
 <div id="myModal" class="modal">
@@ -135,14 +145,13 @@ var captionText = document.getElementById("caption");
 var i;
 for (i = 0; i < images.length; i++) {
   images[i].onclick = function(){
-    modal.style.display = "flex";
+    modal.style.display = "block";
     modalImg.src = this.src;
     modalImg.alt = this.alt;
     captionText.innerHTML = this.nextElementSibling.innerHTML;
   }
 }
 </script>
-
 
 
 <div class="footer">
